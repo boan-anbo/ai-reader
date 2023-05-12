@@ -1,8 +1,8 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: AI Reader
+description: AI Reader is a free, all-in-one desktop software to help researchers and students conduct research with ease in the digital age.
 theme: just-the-docs
 
-url: https://just-the-docs.github.io
+url: https://boan-anbo.github.io/ai-reader
 
 aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+  Template Repository: https://github.com/boan-anbo/ai-reader
