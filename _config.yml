@@ -1,15 +1,40 @@
 title: AI Reader Documentation
 description: AI Reader is a free, all-in-one desktop software to help researchers and students conduct research with ease in the digital age.
 theme: just-the-docs
-logo: assets/general/ai_reader_icon.png
-favicon_ico: assets/general/icon.ico
+logo: assets/general/icon.png
+favicon_ico: assets/general/icon.png
 
 url: https://boan-anbo.github.io/ai-reader
+repository: boan-anbo/ai-reader
 
 aux_links:
   Issues: https://github.com/boan-anbo/ai-reader/issues
   Github: https://github.com/boan-anbo/ai-reader
 
+# Footer content
+# appears at the bottom of every page's main content
+
+# Back to top link
+back_to_top: true
+back_to_top_text: "Back to top"
+
+footer_content: "Copyright &copy; 2023 Bo An."
+
 # Footer last edited timestamp
 last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
 last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
+
+callouts_level: quiet 
+callouts:
+  warning:
+    title: Warning
+    color: red
+  note:
+    title: Note
+    color: green
+  issue:
+    title: Known issue
+    color: yellow
+
+plugins:
+  - jekyll-github-metadata
