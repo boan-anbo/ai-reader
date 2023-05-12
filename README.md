@@ -1,6 +1,6 @@
 # AI Reader Public Repo
 
----
+
 
 The repo serves four main purposes, please use the below links to navigate
 
