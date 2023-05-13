@@ -43,8 +43,8 @@ Updated at: {{ site.github.latest_release.published_at | date: "%b %d, %Y" }}
 {: .issue }
 > MacOS version might has issues on older versions such as Big Sur.
 
-[Windows]({{ site.github.latest_release.assets[0].browser_download_url }}){: .btn}
-[MacOS Universal]({{ site.github.latest_release.assets[1].browser_download_url }}){: .btn}
+[Windows]({{ site.github.latest_release.assets[1].browser_download_url }}){: .btn}
+[MacOS Universal]({{ site.github.latest_release.assets[0].browser_download_url }}){: .btn}
 
 ### Past versions
 
