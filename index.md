@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Getting started
 layout: home
 nav_order": 1
 ---
@@ -24,6 +24,9 @@ AI Reader is a free, all-in-one desktop software to help researchers and student
 {:toc}
 </details>
 
+## Latest release: {{ site.github.latest_release.tag_name }}: {{ site.github.latest_release.published_at | date: "%b %d, %Y" }}
+{: .label .label-green }
+
 ## Video tutorial
 
 ### Youtube
@@ -33,22 +36,38 @@ AI Reader is a free, all-in-one desktop software to help researchers and student
 
 Or, download the video [here](assets/v0.1.0/ai_reader_0.1.0_web_demo.mp4)
 
+---
+
 ## Download
 
-### Latest version: __{{ site.github.latest_release.tag_name }}__
+### Latest version: __{{ site.github.latest_release.tag_name }}__ ({{ site.github.latest_release.published_at | date: "%b %d, %Y" }})
 
-Updated at: {{ site.github.latest_release.published_at | date: "%b %d, %Y" }}
-{: .label .label-green }
+{: .new }
+> Legacy MacOS supported
 
-{: .issue }
-> MacOS version might have issues on older versions such as Big Sur.
+#### Release notes
 
-[Windows]({{ site.github.latest_release.assets[1].browser_download_url }}){: .btn}
-[MacOS Universal]({{ site.github.latest_release.assets[0].browser_download_url }}){: .btn}
+{{ site.github.latest_release.body }}
+
+### Download options
+
+{% for asset in site.github.latest_release.assets %}
+{% if asset.name contains '.msi' %}
+[Windows]({{ asset.browser_download_url }}){: .btn}
+
+For __Windows 7__ and above. Size: _{{ asset.size | times: 1.0 | divided_by: 1024 | divided_by: 1024 | round: 2 | append: " MB" }}_
+{% elsif asset.name contains '.dmg' %}
+[MacOS Universal]({{ asset.browser_download_url }}){: .btn}
+
+For both __Silicon__ and __Intel__ Macs. Size: _{{ asset.size | times: 1.0 | divided_by: 1024 | divided_by: 1024 | round: 2 | append: " MB" }}_
+  {% endif %}
+{% endfor %}
 
 ### Past versions
 
-Visit [releases]({{ site.github.releases_url }}) for all versions.
+Visit [releases]({{ site.github.releases_url }}) for legacy versions.
+
+---
 
 ## Design
 
@@ -86,6 +105,8 @@ digital format, offering easy-to-use tools for this purpose.
 At its core, AI Reader aims to eliminate repetitive manual tasks, allowing you to focus on the aspects of research that
 truly matter: exploring, thinking, analyzing, and expressing. Drawing from my years of experience building tools for my
 own research, I hope AI Reader continues to evolve and help others in similar situations.
+
+---
 
 ## Modules
 
@@ -125,7 +146,7 @@ OpenAI API key to function.
 
 - Export your chat history as a Markdown file for future reference.
 
-### Reading Notes Organizer 
+### Reading Notes Organizer
 
 Upcoming in [v0.2.0](#roadmap)
 {: .label .label-yellow }
@@ -159,6 +180,8 @@ serving a broader purpose, like AI Discussant, and takes longer to develop.
 - [x] v0.1.0 Preview - AI Discussant Module - _May_
 - [ ] v0.2.0 Preview - Notes Organizer Module - _June_
 - [ ] More planned modules and features to be announced.
+
+---
 
 ## How to Contribute
 

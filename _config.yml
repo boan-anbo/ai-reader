@@ -31,10 +31,13 @@ callouts:
     color: red
   note:
     title: Note
-    color: green
+    color: yellow
   issue:
     title: Known issue
     color: yellow
+  new:
+    title: New feature
+    color: green
 
 plugins:
   - jekyll-github-metadata
